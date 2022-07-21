@@ -1,0 +1,40 @@
+.button {
+   display: inline-block;
+   vertical-align: top;
+   text-decoration: none;
+   border: none;
+   color: $white;
+   background-color: $secondary;
+   padding: 1.1rem 2rem;
+   border-radius: 25px;
+   font-family: inherit;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 12px;
+   text-align: center;
+   transition: background-color 0.2s linear;
+
+   &--red {
+      background-color: $red;
+      box-shadow: 0px 7px 17px -10px rgba($red, 0.2);
+
+      &:hover {
+         background-color: darken($red, 15%);
+      }
+   }
+
+   &--blue {
+      background-color: $blue;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      box-shadow: 0px 7px 17px -10px rgba($blue, 0.2);
+
+      &:hover {
+         background-color: darken($blue, 15%);
+      }
+   }
+}
+
+.button:not(:last-child) {
+   margin-right: 2rem;
+}
