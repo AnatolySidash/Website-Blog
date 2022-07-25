@@ -8,6 +8,10 @@
    position: relative;
 
    &:hover {
+      .nav__link {
+         background-color: $blue;
+      }
+
       >.subnav {
          display: block;
       }
@@ -25,10 +29,6 @@
    text-decoration: none;
    padding: 1.4rem;
    transition: background-color 0.2s linear;
-
-   &:hover {
-      background-color: $blue;
-   }
 
    &.has-subnav {
       position: relative;

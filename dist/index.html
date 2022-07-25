@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>BrainsCloud | Home</title>
+    <title>Web Dev Junior | Blog</title>
 </head>
 
 <body>
@@ -56,6 +56,9 @@
                  <ul class="nav__list">
                     <li class="nav__item">
                        <a class="nav__link" href="#">Профиль</a>
+                    </li>
+                    <li class="nav__item">
+                       <a class="nav__link" href="#">Выйти</a>
                     </li>
                  </ul>
               </nav>
@@ -111,8 +114,48 @@
         <main class="main">
             <div class="container">
                 
-                Hello!
+                <!-- Stories -->
                 
+                <div class="stories">
+                   <div class="stories__item">
+                      <img class="stories__preview" src="assets/images/02_stories/Story_1.jpg" alt="Story#1">
+                      <div class="stories__title">Отдыхаю на природе</div>
+                      <time class="stories__date" datetime="2021-09-20 21:45">20.09.2021</time>
+                   </div>
+                   <div class="stories__item">
+                      <img class="stories__preview" src="assets/images/02_stories/Story_2.jpg" alt="Story#2">
+                      <div class="stories__title">Заканчиваю сложный проект</div>
+                      <time class="stories__date" datetime="2021-09-15 15:13">15.09.2021</time>
+                   </div>
+                   <div class="stories__item">
+                      <img class="stories__preview" src="assets/images/02_stories/Story_3.jpg" alt="Story#3">
+                      <div class="stories__title">Переехал в новую квартиру</div>
+                      <time class="stories__date" datetime="2021-09-10 17:00">10.09.2021</time>
+                   </div>
+                   <div class="stories__item">
+                      <img class="stories__preview" src="assets/images/02_stories/Story_4.jpg" alt="Story#4">
+                      <div class="stories__title">Осень пришла!</div>
+                      <time class="stories__date" datetime="2021-09-01 09:00">01.09.2021</time>
+                   </div>
+                
+                </div> <!-- Stories -->
+                
+                
+                <!-- Add new post -->
+                
+                <div class="add_post">
+                   <form class="add_post__form" action="/" method="post">
+                      <textarea class="add_post__textarea" name="post_text" placeholder="Напишите что-нибудь"> </textarea>
+                      <div class="add_post__form-action">
+                         <label class="add_post__file" for="add_post_file">
+                            <input type="file" id="add_post_file">
+                         </label>
+                         <button class="add_post__send" type="submit">
+                            <img src="assets/images/02_stories/send.svg" alt="Отправить">
+                         </button>
+                      </div>
+                   </form>
+                </div>
             </div>
         </main>
     </div>
