@@ -671,6 +671,7 @@ body {
 .main {
   padding-left: 300px;
   padding-top: 10rem;
+  padding-bottom: 8rem;
 }
 
 .container {
@@ -886,6 +887,12 @@ body {
   overflow: hidden;
 }
 
+.post__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .post__content {
   padding: 2.5rem;
   padding-bottom: 1.5rem;
@@ -899,7 +906,14 @@ body {
   color: #D2D2D2;
 }
 
+.post__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .post__data {
+  display: flex;
   font-style: normal;
   font-weight: 400;
   font-size: 1.2rem;
@@ -908,14 +922,25 @@ body {
   padding: 0 0 2.5rem 2.5rem;
 }
 
-.post__data-item {
+.post__data-item:not(:first-child):before {
+  content: "";
   display: inline-block;
-  margin-right: 1rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  margin: 0 0.8rem 0 1.2rem;
+}
+.post__data-item a {
+  color: inherit;
+  text-decoration: none;
+}
+.post__data-item a:hover {
+  text-decoration: underline;
 }
 
-.post__header {
-  width: 100%;
-  object-fit: cover;
+.post__header--video {
+  margin: 2.5rem 2.5rem 0 2.5rem;
 }
 
 .post__title {
@@ -925,4 +950,82 @@ body {
   line-height: 2.1rem;
   color: #fff;
   margin-bottom: 1.5rem;
+}
+.post__title a {
+  color: inherit;
+  text-decoration: none;
+}
+.post__title a:hover {
+  text-decoration: underline;
+}
+
+.post__read {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-decoration: none;
+  color: #107EFF;
+  padding-right: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.post__read:hover {
+  text-decoration: underline;
+}
+
+.embed {
+  position: relative;
+  overflow: hidden;
+}
+.embed:before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+.embed iframe,
+.embed video,
+.embed object,
+.embed embed {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.pagination__item {
+  background-color: #0d0d0d;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+.pagination__item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.pagination__link {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 4rem;
+  text-align: center;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.pagination__link:hover {
+  background-color: #212121;
+}
+.pagination__link.active {
+  background-color: #3137C9;
+  box-shadow: 0px 0px 10px rgba(49, 55, 201, 0.15);
 }
