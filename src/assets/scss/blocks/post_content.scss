@@ -1,0 +1,51 @@
+.post__action {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1.6rem 2.5rem;
+}
+
+.post__action-link {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 1.2rem;
+   line-height: 1.4rem;
+   color: $white;
+   opacity: 0.6;
+   text-decoration: none;
+
+   &:hover {
+      text-decoration: underline;
+   }
+}
+
+.post__action-share {
+   display: flex;
+   align-items: center;
+
+   a:not(:last-child) {
+      margin-right: 1rem;
+   }
+}
+
+.post__share {
+   color: $white;
+   opacity: 0.6;
+}
+
+.post__header--open {
+   margin-left: 2.5rem;
+}
+
+.post__data--open {
+   padding-left: 0;
+   padding-bottom: 0.5rem;
+}
+
+.post__title--open {
+   margin-bottom: 0.5rem;
+}
+
+.post__image--open {
+   margin-bottom: 2.5rem;
+}
