@@ -33,6 +33,11 @@
          background-color: darken($blue, 15%);
       }
    }
+
+   &--square {
+      border-radius: 5px;
+      padding: 8px 15px;
+   }
 }
 
 .button:not(:last-child) {
