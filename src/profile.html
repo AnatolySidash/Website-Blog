@@ -1,0 +1,28 @@
+---
+layout: default
+title: Profile
+---
+
+<h1 class="page__title">Профиль</h1>
+
+<section class="profile">
+
+   <form action="#" method="post" class="profile__form">
+      <div class="profile__block">
+         <input type="text" class="profile__item" placeholder="Ваше Имя">
+         <input type="email" class="profile__item" placeholder="Ваш E-mail" checked>
+         <input type="password" class="profile__item" placeholder="Новый пароль">
+         <input type="password" class="profile__item" placeholder="Подтвердите пароль">
+      </div>
+
+      <div class="profile__avatar">
+         <img src="assets/images/06_profile/avatar_1.jpg" alt="Новый аватар">
+         <label class="change__avatar" for="change_avatar">
+            <input class="new__avatar" type="file" id="change_avatar">выбрать аватар
+         </label>
+      </div>
+   </form>
+
+   <button class="button button--blue button--square">Сохранить</button>
+
+</section>

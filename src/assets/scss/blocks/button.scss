@@ -38,8 +38,14 @@
       border-radius: 5px;
       padding: 8px 15px;
    }
-}
 
-.button:not(:last-child) {
-   margin-right: 2rem;
+   &--center {
+      &:not(:last-child) {
+         margin-right: none;
+      }
+   }
+
+   .button:not(:last-child) {
+      margin-right: 2rem;
+   }
 }

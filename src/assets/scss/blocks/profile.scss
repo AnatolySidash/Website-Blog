@@ -1,0 +1,68 @@
+.profile__form {
+   display: flex;
+   justify-content: space-between;
+}
+
+.profile__block {
+   margin-top: 3rem;
+   width: 70%;
+
+   input {
+      background-color: transparent;
+      border: none;
+      color: $white;
+      border-bottom: 1px solid #3F3F3F;
+      padding-bottom: 0.9rem;
+      transition: border-bottom 0.2s linear;
+
+      &:focus {
+         border-bottom: 1px solid #107EFF;
+      }
+
+      &::placeholder {
+         font-style: normal;
+         font-weight: 400;
+         font-size: 1.4rem;
+         line-height: 1.6rem;
+         color: rgba(255, 255, 255, 0.2);
+      }
+   }
+}
+
+.profile__item {
+   display: block;
+   width: 75%;
+   margin-bottom: 2.5rem;
+}
+
+
+.profile__avatar {
+   width: 30%;
+   margin-top: 3rem;
+
+   img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+   }
+}
+
+.change__avatar {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 1.4rem;
+   line-height: 1.6rem;
+   color: #107EFF;
+   text-decoration: underline;
+   cursor: pointer;
+   transition: color 0.2s linear;
+
+   &:hover {
+      color: $white;
+   }
+
+   input {
+      display: none;
+   }
+}
