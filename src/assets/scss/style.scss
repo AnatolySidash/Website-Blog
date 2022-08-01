@@ -11,6 +11,10 @@ body {
     font-size: 1.4rem;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color: $white;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 *,
@@ -33,7 +37,6 @@ body {
 @import "blocks/stories";
 @import "blocks/add_post";
 @import "blocks/post";
-@import "blocks/post_content";
 @import "blocks/related";
 @import "blocks/comments";
 @import "blocks/feedback";
@@ -42,3 +45,4 @@ body {
 @import "blocks/works";
 @import "blocks/profile";
 @import "blocks/signup";
+@import "blocks/modal";

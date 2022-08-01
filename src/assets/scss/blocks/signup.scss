@@ -3,7 +3,6 @@
 }
 
 .signup__form {
-   text-align: center;
 
    input {
       background-color: transparent;
@@ -32,6 +31,10 @@
    width: 28rem;
    margin: 0 auto;
    margin-bottom: 2.5rem;
+
+   &--modal {
+      width: 34rem;
+   }
 }
 
 .button__block {

@@ -18,7 +18,8 @@
       background-color: $red;
       box-shadow: 0px 7px 17px -10px rgba($red, 0.2);
 
-      &:hover {
+      &:hover,
+      &:focus {
          background-color: darken($red, 15%);
       }
    }
@@ -29,7 +30,8 @@
       padding-right: 2rem;
       box-shadow: 0px 7px 17px -10px rgba($blue, 0.2);
 
-      &:hover {
+      &:hover,
+      &:focus {
          background-color: darken($blue, 15%);
       }
    }
@@ -40,6 +42,8 @@
    }
 
    &--center {
+      text-align: center;
+
       &:not(:last-child) {
          margin-right: none;
       }
