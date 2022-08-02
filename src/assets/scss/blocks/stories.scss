@@ -9,7 +9,7 @@
 .stories__item {
    background-color: $blue;
    position: relative;
-   width: 140px;
+   max-width: 140px;
    height: 195px;
    object-fit: cover;
    overflow: hidden;
