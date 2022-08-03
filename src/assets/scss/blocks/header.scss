@@ -23,6 +23,7 @@
 
 .header__right {
    width: 40%;
+   display: flex;
 
    @include breakpoint($tablet-bp) {
       width: 70%;

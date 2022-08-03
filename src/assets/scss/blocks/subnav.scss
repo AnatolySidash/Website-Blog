@@ -10,6 +10,15 @@
    border-radius: 0px 0px 5px 5px;
    min-width: 16.5rem;
    padding: 0.5rem 0;
+
+   @include breakpoint($tablet-bp) {
+      position: static;
+      width: 100%;
+      background-color: transparent;
+      box-shadow: none;
+      padding: 0 0 0 2rem;
+      display: block;
+   }
 }
 
 .subnav__link {
@@ -27,4 +36,14 @@
    &:hover {
       background-color: darken($blue, 10%);
    }
+
+   @include breakpoint($tablet-bp) {
+      &:hover {
+         background: none;
+      }
+
+      padding: 0.75rem 1.2rem;
+      font-size: 1.5rem;
+   }
+
 }
