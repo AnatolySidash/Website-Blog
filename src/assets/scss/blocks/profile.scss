@@ -1,6 +1,10 @@
 .profile__form {
    display: flex;
    justify-content: space-between;
+
+   @include breakpoint($mobile-s-bp) {
+      flex-direction: column;
+   }
 }
 
 .profile__block {
@@ -27,17 +31,29 @@
          color: rgba(255, 255, 255, 0.2);
       }
    }
+
+   @include breakpoint($mobile-s-bp) {
+      width: 100%;
+   }
 }
 
 .profile__item {
    display: block;
    width: 75%;
    margin-bottom: 2.5rem;
+
+   @include breakpoint($mobile-bp) {
+      width: 85%;
+   }
+
+   @include breakpoint($mobile-s-bp) {
+      width: 100%;
+   }
 }
 
 
 .profile__avatar {
-   width: 30%;
+   width: 40%;
    margin-top: 3rem;
 
    img {
@@ -46,9 +62,15 @@
       object-fit: cover;
       margin-bottom: 1.5rem;
    }
+
+   @include breakpoint($mobile-s-bp) {
+      margin-bottom: 4rem;
+      ;
+   }
 }
 
 .change__avatar {
+   display: block;
    font-style: normal;
    font-weight: 400;
    font-size: 1.4rem;

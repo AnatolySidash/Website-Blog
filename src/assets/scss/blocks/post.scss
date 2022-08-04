@@ -15,6 +15,11 @@
 .post__content {
    padding: 2.5rem;
    padding-bottom: 1.5rem;
+
+   @include breakpoint($mobile-s-bp) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+   }
 }
 
 .post__description {
@@ -24,6 +29,11 @@
    line-height: 2.1rem;
    color: #D2D2D2;
    padding-bottom: 0.5rem;
+
+   @include breakpoint($mobile-s-bp) {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+   }
 }
 
 .post__text {
@@ -35,6 +45,11 @@
    padding-bottom: 0.5rem;
 
    border-bottom: 1px solid #1C1C1C;
+
+   @include breakpoint($mobile-s-bp) {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+   }
 
    h2,
    h3,
@@ -97,6 +112,11 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+
+   @include breakpoint($mobile-m-bp) {
+      flex-direction: column;
+      align-items: flex-start;
+   }
 }
 
 .post__data {
@@ -107,6 +127,11 @@
    line-height: 1.4rem;
    color: #828282;
    padding: 0 0 2.5rem 2.5rem;
+
+   @include breakpoint($mobile-m-bp) {
+      flex-wrap: wrap;
+      padding-bottom: 0.5rem;
+   }
 }
 
 .post__data-item {
@@ -129,12 +154,20 @@
          text-decoration: underline;
       }
    }
+
+   @include breakpoint($mobile-m-bp) {
+      margin-bottom: 1rem;
+   }
 }
 
 .post__header {
 
    &--video {
       margin: 2.5rem 2.5rem 0 2.5rem;
+
+      @include breakpoint($mobile-m-bp) {
+         margin: 1.5rem 1.5rem 0 1.5rem;
+      }
    }
 }
 
@@ -154,6 +187,10 @@
          text-decoration: underline;
       }
    }
+
+   @include breakpoint($mobile-s-bp) {
+      font-size: 1.5rem;
+   }
 }
 
 .post__read {
@@ -170,6 +207,9 @@
       text-decoration: underline;
    }
 
+   @include breakpoint($mobile-m-bp) {
+      padding-left: 2.5rem;
+   }
 }
 
 .post__action {

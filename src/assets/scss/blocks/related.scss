@@ -11,6 +11,10 @@
 .related__item {
    width: 50%;
    margin-bottom: 2.5rem;
+
+   @include breakpoint($mobile-m-bp) {
+      width: 100%;
+   }
 }
 
 .related__title {

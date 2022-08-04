@@ -42,7 +42,9 @@
    }
 
    &--center {
+      display: block;
       text-align: center;
+      margin: 0 auto;
 
       &:not(:last-child) {
          margin-right: none;

@@ -28,4 +28,8 @@
    &:focus {
       background-color: rgba(46, 24, 141, 0.4)
    }
+
+   @include breakpoint($tablet-bp) {
+      font-size: 1.6rem;
+   }
 }

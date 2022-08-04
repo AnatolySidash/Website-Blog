@@ -5,5 +5,7 @@
 
    @include breakpoint($tablet-bp) {
       padding-left: 0;
+      padding-top: 7rem;
+      padding-bottom: 5rem;
    }
 }
