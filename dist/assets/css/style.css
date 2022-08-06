@@ -2198,8 +2198,7 @@ body.no-scroll {
 }
 
 .modal {
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-direction: column;
@@ -2214,6 +2213,11 @@ body.no-scroll {
     z-index: 1010;
     background-color: rgba(229, 229, 229, 0.8);
     padding: 1rem;
+}
+
+.modal.show {
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .modal__content {
