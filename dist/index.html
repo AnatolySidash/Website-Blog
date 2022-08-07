@@ -18,7 +18,7 @@
 
 <body>
 
-    <div class="page">
+    <div class="page" id="page">
         <!-- Header -->
         <header class="header">
            <div class="header__left">
@@ -50,7 +50,7 @@
                  </ul>
               </nav>
         
-              <button class="burger" type="button">
+              <button class="burger" type="button" id="sidebarToggle">
                  <span>Открыть навигация</span>
         
               </button>
@@ -74,7 +74,7 @@
            </div>
         </header>
         <!-- Sidebar -->
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
            <div class="sidebar__header">
               <img class="sidebar__image" src="../assets/images/01_sidebar/sidebar-header.jpg" alt="sidebar_photo">
            </div>
@@ -183,7 +183,8 @@
                 
                 <div class="add_post">
                    <form class="add_post__form" action="/" method="post">
-                      <textarea class="add_post__textarea" name="post_text" placeholder="Напишите что-нибудь"></textarea>
+                      <textarea class="add_post__textarea" name="post_text" placeholder="Напишите что-нибудь"
+                         data-autoresize></textarea>
                       <div class="add_post__form-action">
                          <label class="add_post__file" for="add_post_file">
                             <input type="file" id="add_post_file">

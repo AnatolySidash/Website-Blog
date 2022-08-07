@@ -18,7 +18,7 @@
 
 <body>
 
-    <div class="page">
+    <div class="page" id="page">
         <!-- Header -->
         <header class="header">
            <div class="header__left">
@@ -50,7 +50,7 @@
                  </ul>
               </nav>
         
-              <button class="burger" type="button">
+              <button class="burger" type="button" id="sidebarToggle">
                  <span>Открыть навигация</span>
         
               </button>
@@ -74,7 +74,7 @@
            </div>
         </header>
         <!-- Sidebar -->
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
            <div class="sidebar__header">
               <img class="sidebar__image" src="../assets/images/01_sidebar/sidebar-header.jpg" alt="sidebar_photo">
            </div>
@@ -243,7 +243,8 @@
                       <div class="comments">
                          <h2 class="comments__title">Обсуждение</h2>
                          <form class="comments__form" action="#" method="post">
-                            <textarea class="comments__text" name="comment-text" placeholder="Текст комментария"></textarea>
+                            <textarea class="comments__text" name="comment-text" placeholder="Текст комментария"
+                               data-autoresize></textarea>
                             <button class="button button--blue button--square" type="submit">Отправить</button>
                          </form>
                       </div>
